@@ -1,8 +1,8 @@
 package com.course.springit.domain;
 
-import com.sun.istack.NotNull;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
 
 import javax.persistence.Entity;
@@ -17,8 +17,8 @@ public class Link {
     @Id
     @GeneratedValue
     private Long id;
-    @NotNull
+    @NonNull
     private String title;
-    @NotNull
+    @NonNull
     private String url;
 }
